@@ -46,3 +46,15 @@ This script is for implementing inverse kinematics (IK) for the feet of a humano
 - `OnAnimatorIK()`: a function that updates the position and rotation of the feet using IK based on the weight variables and the raycast hit information.
 
 Overall, this script provides a simple and effective way to implement IK for the feet of a humanoid character in Unity. It allows for realistic adjustments to the feet when walking on uneven surfaces, which can greatly enhance the immersion of a game or simulation.
+
+## License
+
+The `AdjustTerrainDetail` script is licensed under the MIT license. You are free to use, modify, and distribute the script as you see fit, subject to the terms of the license.
+
+## Copyright
+
+The `AdjustTerrainDetail` script is copyright © 2022 Robert Rumney. You are free to use the script without the need for attribution.
+
+## Contact
+
+If you have any questions, suggestions, or feedback about the `AdjustTerrainDetail` script, please don't hesitate to contact me. You can reach me at [robertrumney@gmail.com](mailto:robertrumney@gmail.com) or on [Twitter](https://twitter.com/rumnizzle). I would love to hear from you and see how you are using the script in your projects!
