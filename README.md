@@ -26,6 +26,31 @@ However, the script lacks comments that could help to explain the purpose and fu
 
 This script is for implementing inverse kinematics (IK) for the feet of a humanoid character in Unity. It allows the feet to adjust to the surface they are walking on by using a raycast to determine the surface height and orientation.
 
+## FootHoldIK
+
+The provided script is written in C# and is designed to control the inverse kinematics (IK) for a character's feet in Unity using the Animator component.
+
+The script consists of the following components:
+
+1. Public Variables:
+   - `ikActive`: A boolean variable indicating whether the IK system is active or not.
+   - `rightFootObj`: A Transform variable representing the target position for the character's right foot.
+   - `leftFootObj`: A Transform variable representing the target position for the character's left foot.
+
+2. Private Variables:
+   - `animator`: A reference to the Animator component attached to the same GameObject as the script.
+
+3. Start Method:
+   - Retrieves the Animator component using `GetComponent<Animator>()` and assigns it to the `animator` variable.
+
+4. OnAnimatorIK Method:
+   - Called automatically by Unity during the IK pass of the animation system.
+   - Checks if `ikActive` is true.
+     - If true, the following operations are performed for each foot:
+       - Sets the weight of the IK solver for the foot to 1 using `animator.SetIKPositionWeight` and `animator.SetIKRotationWeight`. This enables the IK solver to influence the position and rotation of the foot.
+       - Sets the position and rotation of the foot to the position and rotation of the corresponding `footObj` Transform using `animator.SetIKPosition` and `animator.SetIKRotation`.
+
+
 #### Public variables
 
 - `IkActive`: a boolean that enables or disables the IK.
